@@ -6,6 +6,7 @@ Something like this::
     class Repo(Model):
          name = fields.String()
          owner = fields.Embedded(User)
+         meta = {'allow_serialize': True}
 
     objects = [Repo(
                    name='Booby',

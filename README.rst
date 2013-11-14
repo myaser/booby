@@ -1,3 +1,51 @@
+this repo
+========
+this repo is deviated from [jaimegildesagredo's one](https://github.com/jaimegildesagredo/booby)
+[rejected pull request](https://github.com/jaimegildesagredo/booby/pull/14)
+
+extra features:
+---------------
+
+* optional meta options
+* the ability to export your model objects to some file then reconstruct it
+
+usage:
+------
+
+.. code-block:: python
+
+    class Repo(Model):
+         name = fields.String()
+         owner = fields.Embedded(User)
+         meta = {'allow_serialize': True}
+
+    objects = [Repo(
+                   name='Booby',
+                   owner={
+                       'login': 'jaimegildesagredo',
+                       'name': 'Jaime Gil de Sagredo'
+                   }),
+               Repo(
+                   name='Booby2',
+                   owner={
+                       'login': 'what ever',
+                       'name': 'who cares'
+                   })
+               ]
+
+    serialize(objects, out_file=my_open_file)
+    deserialize(my_json_file)
+
+
+installation:
+-------------
+
+.. code-block:: bash
+
+    $ pip install git+git://github.com/myaser/booby
+
+***
+
 Booby: data modeling and validation
 ===================================
 

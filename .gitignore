@@ -7,3 +7,8 @@ dist/
 docs/_build/
 .coverage
 .tox/
+.project
+.pydevproject
+.settings/
+src/
+
