@@ -1,7 +1,7 @@
-this repo
+this fork
 ========
-this repo is deviated from [jaimegildesagredo's one](https://github.com/jaimegildesagredo/booby)
-[rejected pull request](https://github.com/jaimegildesagredo/booby/pull/14)
+this repo is deviated from `jaimegildesagredo's one <https://github.com/jaimegildesagredo/booby>`_
+`rejected pull request <https://github.com/jaimegildesagredo/booby/pull/14>`_
 
 extra features:
 ---------------
@@ -44,7 +44,9 @@ installation:
 
     $ pip install git+git://github.com/myaser/booby
 
-***
+
+
+______
 
 Booby: data modeling and validation
 ===================================
